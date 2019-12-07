@@ -1,4 +1,4 @@
-rwa-faker
+rwafaker
 ===========
 
 This is a simple python package that generates massive amounts of realistic fake data in Rwanda native language (Ikinyarwanda)
@@ -14,7 +14,7 @@ Usage
 ----------- 
 
 Single Outputs
-=====
+===============
 
 .. code-block :: python
 
@@ -29,7 +29,7 @@ Single Outputs
    email = rwafaker.email() # 'bisamaza_sm@gmail.com'
 
 Multiple Outputs
-=====
+=================
 
 .. code-block :: python
 
