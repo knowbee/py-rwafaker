@@ -1,5 +1,5 @@
-from data import person
-from helpers import (randomizr, shuffler)
+from .data import person
+from .helpers import (randomizr, shuffler)
 
 class Faker:
   def __init__(self):

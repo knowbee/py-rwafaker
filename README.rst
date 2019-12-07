@@ -12,11 +12,10 @@ The distribution is hosted on pypi at: https://pypi.python.org/pypi/rwa-faker/. 
 
 Usage
 ----------- 
-   $ from rwa-faker import rwafaker
+   .. code-block:: bash
+
+   $ pip install ocpp
+
+   $ from rwafake import rwafaker
+   
    $ fname = rwafaker.firstName() # 'Bisamaza'
-
-
-Contributing
-------------
-
-Community contributions are welcome in the form of pull requests. When contributing code, please ensure:
