@@ -34,5 +34,26 @@ class Faker:
       return f"{fpart} {lpart}"
     except ValueError:
       return "failed, wrong input"
+  def email(self, n=0):
+    try:
+      emails = ""
+      fpart = randomizr(self.person['name']['first_names']).lower()
+      pattern = randomizr(self.patterns)
+      mpart = randomizr(self.person['name']['last_names']).lower()
+      lpart = randomizr(self.person["email"])
+      emails += (f"{fpart}{pattern}{mpart}@{lpart}")
+      if(int(n) and int(n) < 101):
+        emails = []
+        for i in range(n):
+          fpart = shuffler(self.person['name']['first_names'])[i].lower()
+          pattern = randomizr(self.patterns)
+          mpart = shuffler(self.person['name']['last_names'])[i].lower()
+          lpart = shuffler(self.person["email"])[i].lower()
+          email = f"{fpart}{pattern}{mpart}@{lpart}"
+          emails.append(email)
+        return emails
+      return emails
+    except ValueError:
+      return "failed, wrong input"
 rwafaker = Faker()
 
