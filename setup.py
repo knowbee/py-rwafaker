@@ -8,7 +8,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
   name="rwafaker",
-  version='1.0.1',
+  version='2.0.4',
   description="This package generates massive amounts of realistic fake data in Rwanda native language (Ikinyarwanda)",
   long_description=long_description,
   py_modules=["rwafake"],

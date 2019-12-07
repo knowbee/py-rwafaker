@@ -12,7 +12,34 @@ The distribution is hosted on pypi at: https://pypi.org/project/rwafaker/. To di
 
 Usage
 ----------- 
-   $ from rwafake import rwafaker
 
+Single Outputs
+=====
 
-   $ fname = rwafaker.firstName() # 'Bisamaza'
+.. code-block :: python
+
+   from rwafake import rwafaker
+   
+   fname = rwafaker.firstName() # 'Bisamaza'
+
+   lname = rwafaker.lastName() # 'Smith'
+
+   fullName = rwafaker.fullName() # 'Bisamaza Smith'
+
+   email = rwafaker.email() # 'bisamaza_sm@gmail.com'
+
+Multiple Outputs
+=====
+
+.. code-block :: python
+
+   from rwafake import rwafaker
+   
+   fname = rwafaker.firstName(2) # ['Ngarambe', 'Rwigema']
+
+   lname = rwafaker.lastName(2) # ['Barker', 'Fuller']
+
+   fullName = rwafaker.fullName(2) # ['Kandekwe Galloway', 'Buhigiro Byers']
+
+   email = rwafaker.email(2) # ['banganirora.suarez@ur.ac.rw', 'umugaba.cox@yahoo.com']
+
