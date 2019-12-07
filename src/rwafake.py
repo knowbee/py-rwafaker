@@ -20,6 +20,19 @@ class Faker:
       return randomizr(self.person["name"]["last_names"])
     except ValueError:
       return "failed, wrong input"
-
+  def fullName(self, n=0):
+    try:
+      fpart = randomizr(self.person['name']['first_names'])
+      lpart = randomizr(self.person['name']['last_names'])
+      if(int(n) and int(n) < 101):
+        full = []
+        for i in range(n):
+          fpart = shuffler(self.person['name']['first_names'])[i]
+          lpart = shuffler(self.person['name']['last_names'])[i]
+          full.append(f"{fpart} {lpart}")
+        return full
+      return f"{fpart} {lpart}"
+    except ValueError:
+      return "failed, wrong input"
 rwafaker = Faker()
 
