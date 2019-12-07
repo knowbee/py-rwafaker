@@ -11,23 +11,12 @@ The distribution is hosted on pypi at: https://pypi.python.org/pypi/rwa-faker/. 
     $ pip install rwa-faker
 
 Usage
------------
+----------- 
+   $ from rwa-faker import rwafaker
+   $ fname = rwafaker.firstName() # 'Bisamaza'
 
-```py
-from rwa-faker import rwafaker
 
-# Generate random first name
-fname = rwafaker.firstName(); // 'Bisamaza'
-
-# Generate random email
-email = rwafaker.email(); // 'bisamaza_trev@gmail.com'
-```
 Contributing
 ------------
 
 Community contributions are welcome in the form of pull requests. When contributing code, please ensure:
-
-Authors
--------
-
-`Igwaneza Bruce`_

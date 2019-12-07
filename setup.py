@@ -8,8 +8,8 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
   name="rwa-faker",
-  version='0.0.3',
-  description= "This package generates massive amounts of realistic fake data in Rwanda native language (Ikinyarwanda)",
+  version='1.0.1',
+  description="generate massive amounts of realistic fake data",
   long_description=long_description,
   py_modules=["rwafake"],
   package_dir={'': 'src'},
@@ -28,7 +28,6 @@ setup(
             "Topic :: Software Development :: Libraries :: Python Modules"
       ],
       keywords= 'hi',
-      url='https://github.com/knowbee/py-rwa-faker',
       author='Igwaneza Bruce',
       author_email='knowbeeinc@gmail.com',
       license='MIT',
